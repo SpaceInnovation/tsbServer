@@ -57,6 +57,7 @@ app.use("/lga", require("./routes/lgas"));
 app.use("/states", require("./routes/StatesRoutes"));
 app.use("/roles", require("./routes/Roles"));
 app.use("/status", require("./routes/status"));
+app.use('/reset-password', require('./routes/resetPassword'))
 
 // mongodb connection
 let db = process.env.DBLocal;
